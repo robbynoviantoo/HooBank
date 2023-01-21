@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './style';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
 
 import { 
   Navbar, 
@@ -12,8 +14,12 @@ import {
   Clients,
   CTA,
   Footer} from './components';
+  
 
-const App = () => (
+const App = () => {
+
+
+  return(
     <div className=' bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -41,6 +47,6 @@ const App = () => (
       </div>
 
     </div>
-);
+)};
 
 export default App
